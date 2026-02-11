@@ -24,14 +24,4 @@ class IndexController {
         require dirname(__DIR__) . '/Views/partials/layout.php';
 
     }
-
-    public function resultat() {
-
-        ob_start();
-        require_once dirname(__DIR__) . '/Views/resultat.php';
-        $content = ob_get_clean();
-        require dirname(__DIR__) . '/Views/partials/layout.php';
-    }
-
-
 }
