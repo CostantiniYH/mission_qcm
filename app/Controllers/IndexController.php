@@ -19,7 +19,7 @@ class IndexController {
                 $inQuery = implode(',', $ids);
                          
                 // On récupère les questions et leurs réponses pour les 10 ids récupérés plus haut
-                $sqlR = "SELECT q.idq, q.libelleQ, r.idr, r.libelleR
+                $sqlR = "SELECT q.idq, q.libelleq, r.idr, r.libeller
                         FROM questions q
                         LEFT JOIN reponses r ON q.idq = r.idq
                         WHERE q.idq IN ($inQuery)";
@@ -33,14 +33,14 @@ class IndexController {
                     $idq = $row['idq'];
                     if (!isset($tableauQuestions[$idq])) {
                         $tableauQuestions[$idq] = [
-                            'libelleQ' => $row['libelleQ'],
+                            'libelleq' => $row['libelleq'],
                             'reponses' => []
                         ];
                     }
                     if ($row['idr']) {
                         $tableauQuestions[$idq]['reponses'][] = [
                             'idr' => $row['idr'],
-                            'libelleR' => $row['libelleR']
+                            'libeller' => $row['libeller']
                         ];
                     }
                 }

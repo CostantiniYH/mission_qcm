@@ -11,14 +11,14 @@
                 <div class="bg-white m-3 p-3 rounded shadow-sm">
 
                     <label class="d-block" for="question_<?= $idq ?>">
-                        <strong><?= $i++ . '. '. $item['libelleQ'] ?></strong>
+                        <strong><?= $i++ . '. '. $item['libelleq'] ?></strong>
                     </label>
                     <?php 
                     foreach ($item['reponses'] as $reponse):
                     ?>
                         <input class="" type="radio" name="question_<?= $idq ?>" id="r<?= $reponse['idr'] ?>">
                         <label for="r<?= $reponse['idr'] ?>">
-                            <?= $reponse['libelleR'] ?>
+                            <?= $reponse['libeller'] ?>
                         </label><br>
                     <?php
                     endforeach;
