@@ -1,5 +1,5 @@
 <?php
-namespace App\Views\Components;
+namespace App\Views\components;
 
 class Base {
     public function Title($title) {
