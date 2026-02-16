@@ -8,6 +8,7 @@ ini_set('display_errors', 1);
 require dirname(__DIR__) . "/vendor/autoload.php";
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
+
 require_once dirname(__DIR__) . '/app/config/config.php';
 
-require dirname(__DIR__) . "/app/core/init.php";
+require dirname(__DIR__) . "/core/init.php";

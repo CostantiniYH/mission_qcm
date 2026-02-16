@@ -1,9 +1,10 @@
 <?php
 use App\Controllers\IndexController;
 use App\Controllers\AuthController;
-
+use App\Middleware\AuthMiddleware;
 
 $router->get('/', [IndexController::class, 'index']);
+    // ->middleware(AuthMiddleware::class);
 
 $router->get('/register', [AuthController::class, 'formRegister']);
 $router->post('/register', [AuthController::class, 'register']);

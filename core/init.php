@@ -1,5 +1,5 @@
 <?php
-use App\Core\Router;
+use Core\Router;
 
 $router = new Router();
 

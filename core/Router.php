@@ -1,6 +1,7 @@
 <?php
-namespace App\Core;
-use App\Core\Middleware;
+namespace Core;
+use Core\Route;
+use Core\Middleware;
 use RuntimeException;
 
 final class Router
@@ -12,7 +13,7 @@ final class Router
 
     private $groupPrefix = '';
 
-    /* ==========================
+    /* ========================== 
        HTTP METHODS
        ========================== */
 
@@ -42,14 +43,16 @@ final class Router
 
     public function add($methods, $path, $handler)
     {
-        $this->routes[] = new Route(
+        $route = new Route(
             $methods,
             $this->groupPrefix . $path,
             $handler,
             $this->groupMiddleware
         );
 
-        return $this;
+        $this->routes[] = $route;
+
+        return $route;
     }
 
     public function group($options, $callback)
@@ -89,6 +92,18 @@ final class Router
 
     private function runMiddlewares($middlewares, $handler)
     {
+        $middlewares = array_map(function ($middleware) {
+            if (is_string($middleware)) {
+                if (!class_exists($middleware)) {
+                    throw new RuntimeException("Middleware $middleware introuvable");                    
+                }
+
+                return new $middleware();
+            }
+
+            return $middleware;
+        }, $middlewares);
+
         $pipeline = array_reduce(
             array_reverse($middlewares),
             fn($next, Middleware $middleware) =>

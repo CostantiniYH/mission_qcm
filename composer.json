@@ -1,0 +1,20 @@
+{
+    "name": "yhc/mission_2_qcm",
+    "type": "project",
+    "authors": [
+        {
+            "name": "CostantiniYH",
+            "email": "costantiniyaacov@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app",
+            "Core\\": "core"
+        }
+    }
+
+}

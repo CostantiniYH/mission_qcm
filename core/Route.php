@@ -1,5 +1,5 @@
 <?php
-namespace App\Core;
+namespace Core;
 
 final class Route
 {
@@ -9,6 +9,16 @@ final class Route
         public $handler,
         public $middlewares = []
     ) {}
+
+    public function middleware($middleware)
+    {
+        $this->middlewares = array_merge(
+            $this->middlewares,
+            (array) $middleware
+        );
+
+        return $this;
+    }
 
     public function matches($method, $uri)
     {

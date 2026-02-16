@@ -1,0 +1,26 @@
+
+body {
+    background-image: linear-gradient(
+        145deg,
+        rgb(6, 74, 129),
+        rgba(6, 74, 129, 0.884),
+        rgb(6, 74, 129),
+        rgba(6, 74, 129, 0.863),
+        rgba(6, 84, 129, 0.938)
+    );
+    color: white;
+}
+
+.bg-marine {
+    background-image: linear-gradient(
+        145deg,
+        rgb(0, 44, 138),        
+        rgba(0, 44, 138, 0.694),        
+        rgba(0, 44, 138, 0.473),        
+        rgb(0, 44, 138),        
+        rgba(0, 44, 138, 0.646),        
+        rgb(0, 44, 138)
+    );
+    color: white;
+}
+

@@ -13,7 +13,7 @@ if (!defined('BASE_URL')) {
         : '';
     
     if ($host === 'localhost' || $host === '127.0.0.1') {
-        define('BASE_URL', $protocol . '://' . $host . '/nom_du_répertoire_global/');
+        define('BASE_URL', $protocol . '://' . $host . '/mission_2_qcm/public');
     } else {
         define('BASE_URL', $protocol . '://' . $host . $prefix . '/');
     }
