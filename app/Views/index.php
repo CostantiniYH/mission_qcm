@@ -2,7 +2,7 @@
 <div class="container ">
     <h1 class="text-center">Questionnaire</h1>
     <section class="p-5  text-black">
-        <form class="" action="" method="post">
+        <form class="" action="quize" method="post">
             <?php               
 
             $i = 1;
@@ -27,7 +27,7 @@
             <?php 
             endforeach;
             ?>
-            <input class="shadow btn bg-white w-25 d-block mx-auto" type="submit" value="Envoyer">
+            <input class="shadow btn btn-primary w-25 d-block mx-auto" type="submit" value="Envoyer">
         </form>
     </section>
 </div>

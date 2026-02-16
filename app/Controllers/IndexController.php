@@ -25,13 +25,7 @@ class IndexController {
                         WHERE q.idq IN ($inQuery)";
                 $stmt = $pdo->query($sqlR);
                 $data =  $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-                // echo '<pre>';
-                // var_dump($ids);
-                // var_dump($inQuery);
-                // var_dump($data);
-                // echo '</pre>';
-
+                
                 // On restructure pour avoir les questions et les réponses associées directement 
                 // dans le même tableau
                 $tableauQuestions = [];
@@ -50,7 +44,6 @@ class IndexController {
                         ];
                     }
                 }
-                // var_dump($tableauQuestions[$idq]);exit;
 
         ob_start();
         require dirname(__DIR__) . '/Views/index.php';

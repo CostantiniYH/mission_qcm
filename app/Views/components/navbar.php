@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-opacity-50">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="">QCM Yhc</a>
+  <div class="container-fluid fs-5">
+    <a class="navbar-brand fs-3" href="/">QCM Yhc</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active bi bi-house-fill" aria-current="page" href="/"></a>
+          <a class="nav-link active bi bi-house-fill" aria-current="page" href="/"> Questionnaire</a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contact">Questionnaire</a>
-        </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/"></a>
+        </li> -->
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Formulaire
           </a>
@@ -23,11 +23,10 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Parcourir</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
       <ul class="navbar-nav ms-auto">
-        <li><a class="dropdown-item bi bi-person-fill" href="login"></a></li>          
-        <li><a class="dropdown-item" href="">Inscription</a></li>
+        <li><a class="bi bi-person-fill fs-2 text-success" href="login"></a></li>          
       </ul>
     </div>
   </div>
