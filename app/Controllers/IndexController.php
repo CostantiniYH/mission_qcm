@@ -9,7 +9,7 @@ class IndexController {
                 $pdo = Database::connect();
 
                 // On récupère les questions de façon aléatoire 
-                $sqlQ = "SELECT * FROM questions ORDER BY RAND() LIMIT 10";
+                $sqlQ = "SELECT * FROM questions ORDER BY RANDOM() LIMIT 10"; // RAND() pour MySQL et RANDOM() pour PostgreSQL
                 $stmt = $pdo->prepare($sqlQ); // Requêtes préparées pour protéger des injection SQL
                 $stmt->execute();
                 // Tableau associatif pour récupérer les champs et les valeurs
