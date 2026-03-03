@@ -1,6 +1,6 @@
 <?php
 if (isset($_SESSION['flash']['erreur']) && !empty($_SESSION['flash']['erreur'])) {
-    $e = htmlspecialchars($_SESSION['flash']['erreur']);
+    $e = htmlspecialchars($_SESSION['flash']['erreur']); // htmlspecialchars() protége des injection XSS
 }
 
 if (isset($_SESSION['flash']['success']) && !empty($_SESSION['flash']['success'])) {
