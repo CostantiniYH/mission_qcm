@@ -61,7 +61,7 @@ class IndexController {
                     $requete2 = "SELECT q.libelleQ, r.libeller FROM questions q, reponses r
                                 WHERE q.idq = r.idq
                                 AND q.idq = $key
-                                AND verite = 1";
+                                AND verite = true";
                     $resultat2 = $pdo->prepare($requete2);
                     $resultat2->execute();
                     $ligne2 = $resultat2->fetch(PDO::FETCH_ASSOC);
