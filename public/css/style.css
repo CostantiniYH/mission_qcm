@@ -8,7 +8,6 @@ body {
         rgba(6, 74, 129, 0.61),
         rgba(6, 84, 129, 0.658)
     );
-    color: white;
 }
 
 .bg-marine {
@@ -24,3 +23,65 @@ body {
     color: white;
 }
 
+.label-question {
+    background-color: rgb(152, 181, 206);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.radio-q {
+    transform: translateX(10px);
+}
+
+.bg-incorrect {
+    background-color: rgb(253, 229, 229);
+    color: red;
+    border-left: 2px solid red;
+}
+
+.btn-envoie {
+    background-image: linear-gradient(
+        145deg,
+        rgb(0, 95, 173),
+        rgba(0, 95, 173, 0.911),
+        rgb(0, 95, 173),
+        rgba(0, 95, 173, 0.897),
+        rgb(0, 95, 173),
+        rgba(0, 95, 173, 0.685),
+        rgb(0, 95, 173),
+        rgba(0, 95, 173, 0.767),
+        rgb(0, 95, 173)
+    );
+}
+
+.btn-envoie:hover {
+     background-image: linear-gradient(
+        145deg,
+        rgba(0, 95, 173, 0.856),
+        rgba(0, 95, 173, 0.712),
+        rgb(0, 95, 173),
+        rgba(0, 95, 173, 0.897),
+        rgb(0, 95, 173),
+        rgba(0, 95, 173, 0.685),
+        rgba(0, 95, 173, 0.808),
+        rgba(0, 95, 173, 0.767),
+        rgba(0, 95, 173, 0.842)
+    );
+    color: white;
+    font-weight: bold;
+    transform: scale(1.001);
+    transition: 0.5s ease-out;
+}
+
+.btn-retry {        
+    background-color: rgba(0, 156, 228, 0.644);
+    color: white;
+}
+.btn-retry a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-retry:hover {
+    background-color: rgb(6, 176, 255);
+}

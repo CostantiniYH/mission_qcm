@@ -6,6 +6,8 @@ use App\Middleware\AuthMiddleware;
 $router->get('/', [IndexController::class, 'index']);
     // ->middleware(AuthMiddleware::class);
 
+$router->post('/resultat', [IndexController::class, 'resultat']);
+
 $router->get('/register', [AuthController::class, 'formRegister']);
 $router->post('/register', [AuthController::class, 'register']);
 

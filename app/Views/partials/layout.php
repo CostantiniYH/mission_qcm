@@ -13,8 +13,8 @@
   <?php require_once __DIR__ . '/header.php'?>
 
 
-  <div class="container-fluid mt-5 mb-5">
-  <?php require dirname(__DIR__) . "/components/alert.php"; ?>
+  <div class="">
+    <?php require dirname(__DIR__) . "/components/alert.php"; ?>
 
     <?= $content ?>
   </div>
