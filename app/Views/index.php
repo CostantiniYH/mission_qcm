@@ -19,7 +19,7 @@
                     $cpt += 1;
                     
                     // 8. Récupérer, à l'intérieur de la boucle, les 4 réponses de la question dans le désordre avec : ORDER BY RAND()
-                    $sqlR = "SELECT * FROM reponses WHERE idq = $idq ORDER BY RAND()";
+                    $sqlR = "SELECT * FROM reponses WHERE idq = $idq ORDER BY RANDOM()";
                     $stmt2 = $pdo->prepare($sqlR);
                     $stmt2->execute();
                     
