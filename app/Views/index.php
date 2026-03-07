@@ -13,7 +13,7 @@
                     $idq = $ligne['idq'];
                     
                     // 6. Afficher la question avec sa numérotation
-                    echo "<h3 class='label-question'>$cpt." . $ligne['libelleQ'] . "</h3>";
+                    echo "<h3 class='label-question'>$cpt." . $ligne['libelleq'] . "</h3>";
                     
                     // 7. Ajouter 1 au compteur
                     $cpt += 1;
