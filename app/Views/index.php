@@ -38,7 +38,7 @@
                         
                         ?>
             
-                <input class="shadow btn-envoie d-block mx-auto w-100 p-2" type="submit" value="Envoyer">
+                <input class="shadow btn btn-envoie d-block mx-auto w-100 p-2" type="submit" value="Envoyer">
             </form>
         </section>
     </div>
